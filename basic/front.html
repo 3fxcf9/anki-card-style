@@ -1,79 +1,85 @@
-<link rel="stylesheet" href="styles.css" />
-
-<!--
 <div style="display: none;">
-\(
-% \leq et \geq appearance
-\renewcommand{\leq}{\leqslant}
-\renewcommand{\geq}{\geqslant}
+  \(
+  % \leq et \geq appearance
+  \renewcommand{\leq}{\leqslant}
+  \renewcommand{\geq}{\geqslant}
 
-% Solutions set
-\newcommand{\Sol}{\mathcal S}
+  % Solutions set
+  \newcommand{\Sol}{\mathcal S}
 
-% Common sets
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\C}{\mathbb{C}}
-\newcommand{\U}{\mathbb{U}}
-\renewcommand{\P}{\mathbb{P}}
-\newcommand{\K}{\mathbb{K}}
+  % Common sets
+  \newcommand{\N}{\mathbb{N}}
+  \newcommand{\Z}{\mathbb{Z}}
+  \newcommand{\Q}{\mathbb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\C}{\mathbb{C}}
+  \newcommand{\U}{\mathbb{U}}
+  \renewcommand{\P}{\mathbb{P}}
+  \newcommand{\K}{\mathbb{K}}
 
-% Functions set and regularity classes
-\newcommand{\Func}{\mathcal{F}}
-\newcommand{\Cont}{\mathcal{C}}
-\newcommand{\Diff}{\mathcal{D}}
+  % Functions set and regularity classes
+  \newcommand{\Func}{\mathcal{F}}
+  \newcommand{\Cont}{\mathcal{C}}
+  \newcommand{\Diff}{\mathcal{D}}
 
 
-% Complex numbers
-\let\conj\overline
-\renewcommand{\Re}{\mathscr{R\!e}}
-\renewcommand{\Im}{\mathscr{I\!\!m}}
+  % Complex numbers
+  \let\conj\overline
+  \renewcommand{\Re}{\mathscr{R\!e}}
+  \renewcommand{\Im}{\mathscr{I\!\!m}}
 
-% Trigonometry
-\DeclareMathOperator{\acos}{Arccos}
-\DeclareMathOperator{\asin}{Arcsin}
-\DeclareMathOperator{\atan}{Arctan}
-\DeclareMathOperator{\ch}{ch}
-\DeclareMathOperator{\sh}{sh}
-\DeclareMathOperator{\th}{th}
+  % Trigonometry
+  \DeclareMathOperator{\acos}{Arccos}
+  \DeclareMathOperator{\asin}{Arcsin}
+  \DeclareMathOperator{\atan}{Arctan}
+  \DeclareMathOperator{\ch}{ch}
+  \DeclareMathOperator{\sh}{sh}
+  \DeclareMathOperator{\th}{th}
 
-% Arithmetic
-\newcommand{\set}[1]{\{\,#1\,\}}
-\newcommand{\cgm}[2]{\equiv #1 \left[#2\right]} % ConGruent Modulo
-\newcommand{\ncgm}[2]{\not\equiv #1 \left[#2\right]}
-\newcommand{\lient}{[\![}
-\newcommand{\rient}{]\!]}
-\newcommand{\iset}[1]{\lient #1 \rient}
+  % Arithmetic
+  \newcommand{\set}[1]{\{\,#1\,\}}
+  \newcommand{\cgm}[2]{\equiv #1 \left[#2\right]} % ConGruent Modulo
+  \newcommand{\ncgm}[2]{\not\equiv #1 \left[#2\right]}
+  \newcommand{\lient}{[\![}
+  \newcommand{\rient}{]\!]}
+  \newcommand{\iset}[1]{\lient #1 \rient}
 
-% Vectors
-\newcommand{\vv}[1]{\overrightarrow{#1}}
-\newcommand\norm[1]{\left\lVert#1\right\rVert}
+  % Vectors
+  \newcommand{\vv}[1]{\overrightarrow{#1}}
+  \newcommand\norm[1]{\left\lVert#1\right\rVert}
 
-% Proprerties
-\newcommand{\prop}{\mathcal P}
-\newcommand{\mathquote}[1]{\frquote{\text{#1}}}
+  % Proprerties
+  \newcommand{\prop}{\mathcal P}
+  \newcommand{\mathquote}[1]{\frquote{\text{#1}}}
 
-% Limits
-\newcommand{\arrowlim}[1]{\ \xrightarrow[\;#1 \to #2\;]{}\ }
-\renewcommand{\textlim}[1]{\lim\limits_{#1}}
+  % Limits
+  \newcommand{\arrowlim}[1]{\ \xrightarrow[\;#1 \to #2\;]{}\ }
+  \renewcommand{\textlim}[1]{\lim\limits_{#1}}
 
-% Greek style
-\newcommand{\eps}{\varepsilon}
-\newcommand{\ph}{\varphi}
-\newcommand{\lbda}{\lambda}
+  % Greek style
+  \newcommand{\eps}{\varepsilon}
+  \newcommand{\ph}{\varphi}
+  \newcommand{\lbda}{\lambda}
 
-% Differentials
-\newcommand{\dd}{\mathrm d}
+  % Differentials
+  \newcommand{\dd}{\mathrm d}
 
-% Probabilities
-\newcommand{\prob}{\mathbb P}
-\newcommand{\expect}{\mathbb E}
-\newcommand{\variance}{\mathbb V}
-\)
+  % Probabilities
+  \newcommand{\prob}{\mathbb P}
+  \newcommand{\expect}{\mathbb E}
+  \newcommand{\variance}{\mathbb V}
+  \)
 </div>
--->
+
+<div class="note">
+  <div class="front">
+    <div class="header">
+      <div class="tags {{#Tags}}nonempty{{/Tags}}">{{Tags}}</div>
+      <div class="deck">{{Subdeck}}</div>
+    </div>
+    <div class="question">{{Front}}</div>
+  </div>
+</div>
 
 <script>
   var tagListElement = document.querySelector(".tags.nonempty");
@@ -90,13 +96,3 @@
     tagListElement.innerHTML = html;
   }
 </script>
-
-<div class="note">
-  <div class="front">
-    <div class="header">
-      <div class="tags {{#Tags}}nonempty{{/Tags}}">{{Tags}}</div>
-      <div class="deck">{{Subdeck}}</div>
-    </div>
-    <div class="question">{{Front}}</div>
-  </div>
-</div>
