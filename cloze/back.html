@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="styles.css" />
+
+<script>
+  var tagListElement = document.querySelector(".tags.nonempty");
+  if (tagListElement) {
+    var tags = tagListElement.innerHTML.split(" ");
+    var html = "";
+    tags.forEach(function (tag) {
+      var bottomleveltag = tag.includes("::")
+        ? tag.substring(tag.lastIndexOf("::") + 2)
+        : tag;
+      var newTag = '<span class="tag">' + bottomleveltag + "</span>";
+      html += newTag;
+    });
+    tagListElement.innerHTML = html;
+  }
+</script>
+
+<div class="note">
+  <div class="front">
+    <div class="header">
+      <div class="tags {{#Tags}}nonempty{{/Tags}}">{{Tags}}</div>
+      <div class="deck">{{Subdeck}}</div>
+    </div>
+    <div class="text">{{cloze:Text}}</div>
+  </div>
+  {{#Back Extra}}
+  <div class="back">{{Back Extra}}</div>
+  {{/Back Extra}}
+</div>
