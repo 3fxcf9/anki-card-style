@@ -25,7 +25,7 @@ The card templates I use to make my Anki look nice. They also include my MathJax
 - For the `Basic`/`Basic (and reversed card)`/`Basic (optional reversed card)` note type, copy-paste the content of `basic/front.html` in the first tab, the content of `basic/back.html` in the second and the content of `basic/styles.css` in the third.
 > [!IMPORTANT]
 > Be sure to update all card variations (dropdown at the top of the popup) for the note types involving the creation of multiple cards.
-- For the `Cloze` note type, same but with the `cloze` folder.
+- For the `Cloze` or `Basic (and reversed card)` note type, same but with the relevant folder.
 
 ### AnkiDroid
 
